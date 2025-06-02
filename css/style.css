@@ -1,6 +1,12 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .calculator {
+    
     /* 	border: 1px solid #384B51; */
         background-color: #232323;
+        max-width: 300px;
         border-radius: 1rem;
         margin: 1em;
         padding: 1em;
@@ -89,4 +95,9 @@
     h2 {
         font-size: 1.2rem;
     }
-    
+
+    #resultOutput {
+        color: white;
+        font-weight: 400;
+        font-size: 32px;
+    }

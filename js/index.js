@@ -54,6 +54,12 @@ buttonSelector9.addEventListener("click", function(){
     console.log(numberOutput);
 });
 
+const buttonSelector0 = document.getElementById("btnZero"); //Samma som tidigare
+buttonSelector0.addEventListener("click", function(){
+    numberOutput += 0
+    console.log(numberOutput);
+});
+
 const buttonSelectorAdd = document.getElementById("btnAdd"); 
 buttonSelectorAdd.addEventListener("click", function(){
     numberOutput += "+"; //Sätter + så att jag kan använda "eval" som kommer senare. 
@@ -88,5 +94,13 @@ const buttonSelectorEquals = document.getElementById("btnEqual");
 buttonSelectorEquals.addEventListener("click", function(){
     const result = eval(numberOutput); //skapar uträkningen, eval är hjälten här. 
     console.log(result);
+    displayResult(result)
 })
+
+const fetchResult = document.getElementById("resultOutput");
+
+function displayResult(result){
+    fetchResult.textContent = result;
+}
+
 
